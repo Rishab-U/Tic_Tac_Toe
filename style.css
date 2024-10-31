@@ -1,0 +1,295 @@
+body{
+    /* background-color: rgb(255, 208, 208); */
+     background-image: url(image8.jpg);
+     background-size: 100vw 100vh;
+     background-repeat: no-repeat;
+     background-position: top;
+}
+
+
+.game{
+    height: 90vh;
+    width: 80vw;
+    /* border: 1px solid black; */
+    margin-left: 10vw;
+    margin-right: 10vw;
+    position: relative;
+    /* background-image: url(/JavaScript_Learn/Chapter-9\ Tic\ Tac\ Toe/image7.jpg); */
+}
+
+.heading{
+
+    width: 100%;
+    height: 60px;
+    /* margin-left: 30%; */
+    /* border-radius: 4px; */
+    text-align: center;
+    font-weight: bolder;
+    font-size:xx-large;
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0,0.9);
+    text-shadow: 2px 2px rgb(161, 221, 112);
+    
+}
+
+.input_box{
+    /* border: 1px solid black; */
+    height: 20%;
+    position: relative; /* kept relative beacuse child absolute position behave basis of parent box*/
+    overflow: hidden;
+}
+
+.player_1{
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 40%;
+    display: flex;  /* using flex property to align child element*/
+    flex-wrap: wrap;  /* align child element with in the box*/
+    position: absolute; /* if parent is releative position then this behave on basis on parent box*/
+    left: 2px;
+    top: 2px;
+    justify-content: center;
+    
+}
+
+.player_2{
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute; /* here absolute position behave on the basis of parent box*/
+    right: 3.5px;
+    top: 2px;
+    justify-content: center;
+    
+}
+
+input[player="one"]{   /* using css on attribute name 'player' */
+
+    width: 100%;
+    height: 80%;
+    margin-bottom: 3px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    background-color: rgb(161, 221, 112);
+    box-shadow: 3px 3px;
+}
+
+input[player="two"]{   /* using css on attribute name 'player' */
+
+    width: 100%;
+    height: 80%;
+    margin-bottom: 3px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    background-color: #A1DD70;
+    box-shadow: 3px 3px;
+}
+
+/* .save_1{
+    border-radius: 4px;
+}
+
+.save_2{
+    border-radius: 4px;
+} */
+
+.large_box{
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 60%;
+    margin-left: 40%;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(58, 166, 185,0.5);
+    box-shadow: 2px 2px;
+    background-image: url(image4.png);
+    background-position: center;
+    /* display: flex;
+    flex-wrap: nowrap; */
+}
+
+.row_1{
+    /* border: 1px solid black; */
+    margin: 4px;
+    height: 30%;
+    display: flex;
+}
+
+.row_2{
+    /* border: 1px solid black; */
+    margin: 4px;
+    height: 30%;
+    display: flex;
+}
+
+.row_3{
+    /* border: 1px solid black; */
+    margin: 4px;
+    height: 30%;
+    display: flex;
+}
+
+.small_box{
+   height: 90%;
+   width: 30%;
+   margin: 2px;
+   flex-wrap: wrap;
+   border-radius: 5px;
+   background-color: #D6EFD8;
+   box-shadow: 1px 1px;
+}
+
+/* .start_reset{
+    border: 1px solid black;
+    width: 20%;
+    padding: 2px;
+    margin-left: 40%;
+    display: flex;
+    position: relative;
+    margin-top: 8px;
+} */
+
+
+
+.reset_box{
+    position: absolute;
+    right: 20%;
+    bottom: 30%;  
+}
+
+.start_box{
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+}
+
+.start{
+    border-radius: 50%;
+    height: 40px;
+    width: 50px;
+    background-color: rgb(161, 221, 112,0.8);
+    box-shadow: 1px 1px;
+    font-family: monospace;
+    color: black;
+}
+
+.reset{
+    border-radius: 20%;
+    height: 40px;
+    background-color: rgb(161, 221, 112,0.8);
+    box-shadow: 1px 1px;
+    font-family: monospace;
+    color: black;
+}
+
+.disable{
+    opacity: 0.6;
+}
+
+.stop{
+    background-color: rgb(255, 69, 0,0.75);
+    border-radius: 20%;
+    
+}
+
+.resume{
+    width: 60px;
+    background-color: rgba(233, 255, 32, 0.692);
+    border-radius: 20%;
+}
+
+.btn{
+    background-color: rgb(161, 221, 112,0.8);
+    font-size: x-large;
+    font-weight: bold;
+    border-color: black;
+    color: black;
+    text-shadow: 1px 1px rgb(189, 88, 88);
+}
+
+.winner{
+    font-size: 2.2rem;
+    box-shadow: 4px 4px;
+    text-shadow: 1.5px 1.5px rgb(189, 88, 88);
+    margin: 3px 3px 3px 3px;
+    border: 2px solid;
+}
+
+.notification{
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+    left: 0;
+    
+}
+
+.display_banner{
+    font-size: small;
+    color:chocolate;
+    animation: banner 10s infinite linear;
+}
+
+@keyframes banner{
+    0%{
+        left: 0;
+    }
+
+    10%{
+        left: 10%;
+    }
+
+    20%{
+        left: 20%;
+    }
+
+    30%{
+        left: 30%;
+        font-size: 1rem;
+        color: red;
+        
+    }
+
+    40%{
+        left: 40%;
+        font-size: 1rem;
+        color: red;
+       
+    }
+
+    50%{
+        left: 50%;
+        font-size: 1rem;
+        color: red;
+        
+    }
+
+    60%{
+        left: 60%;
+        font-size: 1rem;
+        color: red;
+        
+    }
+
+    70%{
+        left: 70%;
+    }
+
+    80%{
+        left: 80%;
+    }
+
+    90%{
+        left: 90%;
+    }
+
+    100%{
+        left: 100%;
+    }
+}
+
+
+.disabled_btn{
+    border: 1px solid black;
+}

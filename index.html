@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+</head>
+
+<!-- <body background="/JavaScript_Learn/Chapter-9 Tic Tac Toe/pexels-pixabay-531880.jpg">
+    
+    note: to set background image
+-->
+
+<body>
+
+    <div class="game">
+
+    <header class="heading"> 
+        <!-- <img src="/JavaScript_Learn/Chapter-9 Tic Tac Toe/image10.PNG" alt="Tic Tac Toe" class="heading"> -->
+         Tic Tac Toe
+    </header>
+
+
+        <div class="input_box">
+
+                <div class="player_1">
+                    <input type="text" class="player_name" placeholder="Enter Player1 Name" player="one" value="" >
+                    <!-- <button class="save_1">Save</button> -->
+                </div>
+
+                <div class="player_2">
+                    <input type="text" class="player_name" placeholder="Enter Player2 Name" player="two" value="" >
+                    <!-- <button class="save_2">Save</button> -->
+                </div>
+
+                <div class="notification">
+                   
+                </div>
+
+         </div>
+
+        <div class="large_box">
+            <div class="row_1">
+                <button class="small_box" index="1"></button>
+                <button class="small_box" index="2"></button>
+                <button class="small_box" index="3"></button>
+            </div>
+
+            <div class="row_2">
+                <button class="small_box" index="4"></button>
+                <button class="small_box" index="5"></button>
+                <button class="small_box" index="6"></button>
+            </div>
+
+            <div class="row_3">
+                <button class="small_box" index="7"></button>
+                <button class="small_box" index="8"></button>
+                <button class="small_box" index="9"></button>
+            </div>
+        </div>
+
+        <div class="start_box">
+            <button class="start">Play</button>
+        </div>
+
+        <div class="reset_box">
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>
